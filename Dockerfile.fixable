@@ -6,5 +6,5 @@ RUN echo "Asia/Bangkok" > /etc/timezone
 RUN echo "Asia/Bangkok" > /etc/localtime
 RUN dpkg-reconfigure -f noninteractive tzdata
 
-ENV CONFIGPATH ./config
+ENV CONFIGPATH ./config/fixable
 COPY $CONFIGPATH /usr/local/etc/haproxy/haproxy.cfg
